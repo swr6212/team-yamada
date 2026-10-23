@@ -1,13 +1,33 @@
 using UnityEngine;
 
 public class MoveBullet : MonoBehaviour
-{
-    [SerializeField]private Vector3 orienTation = new Vector3(1,0,1).normalized;
+{ 
     [SerializeField]private float moveSpeed;
-    [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private float deleteTime = 6.0f;
+    [SerializeField] private int damage;
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>();
-        rigidbody.linearVelocity = orienTation * moveSpeed;
+    }
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+        Destroy(gameObject, deleteTime);
+    }
+
+    public void MoveDirection(Vector3 direction)
+    {
+        rb.linearVelocity = direction.normalized * moveSpeed;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    { 
+        Enemy enemy = other.GetComponentInParent<Enemy>();
+        if(enemy != null)
+        {
+            enemy.TakeDamage(damage);
+            Destroy(gameObject);
+        }
     }
 }
