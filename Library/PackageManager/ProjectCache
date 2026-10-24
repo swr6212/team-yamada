@@ -1,25 +1,25 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: "D:/\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12/Packages/manifest.json"
+    m_FilePath: "D:/2026\u82E5\u30AF\u30EA/\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13/Packages/manifest.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639283358053637561
-    m_Hash: 2518922495
+      ticks: 639284138398773893
+    m_Hash: 4003254368
   m_LockFileStatus:
-    m_FilePath: "D:/\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12/Packages/packages-lock.json"
+    m_FilePath: "D:/2026\u82E5\u30AF\u30EA/\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13/Packages/packages-lock.json"
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 639283358053739946
-    m_Hash: 2676066620
+      ticks: 639284138398773893
+    m_Hash: 724386690
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: "D:/\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12/Packages"
+m_ProjectPath: "D:/2026\u82E5\u30AF\u30EA/\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13/Packages"
 m_EditorVersion: 6000.3.9f1 (7a9955a4f2fa)
 m_ResolvedPackages:
 - packageId: com.unity.multiplayer.center@1.0.1
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.1
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.multiplayer.center@f01f4ba8d00a"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.multiplayer.center@f01f4ba8d00a"
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -134,7 +134,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.ugui@bb329a87fcdc"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.ugui@bb329a87fcdc"
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: uGUI
@@ -241,7 +241,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.accessibility"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.accessibility"
   assetPath: Packages/com.unity.modules.accessibility
   name: com.unity.modules.accessibility
   displayName: Accessibility
@@ -329,7 +329,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.adaptiveperformance"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.adaptiveperformance"
   assetPath: Packages/com.unity.modules.adaptiveperformance
   name: com.unity.modules.adaptiveperformance
   displayName: Adaptive Performance
@@ -423,7 +423,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.ai"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.ai"
   assetPath: Packages/com.unity.modules.ai
   name: com.unity.modules.ai
   displayName: AI
@@ -511,7 +511,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.androidjni"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.androidjni"
   assetPath: Packages/com.unity.modules.androidjni
   name: com.unity.modules.androidjni
   displayName: Android JNI
@@ -598,7 +598,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.animation"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.animation"
   assetPath: Packages/com.unity.modules.animation
   name: com.unity.modules.animation
   displayName: Animation
@@ -686,7 +686,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.assetbundle"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.assetbundle"
   assetPath: Packages/com.unity.modules.assetbundle
   name: com.unity.modules.assetbundle
   displayName: Asset Bundle
@@ -774,7 +774,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.audio"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.audio"
   assetPath: Packages/com.unity.modules.audio
   name: com.unity.modules.audio
   displayName: Audio
@@ -862,7 +862,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.cloth"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.cloth"
   assetPath: Packages/com.unity.modules.cloth
   name: com.unity.modules.cloth
   displayName: Cloth
@@ -954,7 +954,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.director"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.director"
   assetPath: Packages/com.unity.modules.director
   name: com.unity.modules.director
   displayName: Director
@@ -1050,7 +1050,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.imageconversion"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.imageconversion"
   assetPath: Packages/com.unity.modules.imageconversion
   name: com.unity.modules.imageconversion
   displayName: Image Conversion
@@ -1138,7 +1138,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.imgui"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.imgui"
   assetPath: Packages/com.unity.modules.imgui
   name: com.unity.modules.imgui
   displayName: IMGUI
@@ -1226,7 +1226,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.jsonserialize"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.jsonserialize"
   assetPath: Packages/com.unity.modules.jsonserialize
   name: com.unity.modules.jsonserialize
   displayName: JSONSerialize
@@ -1314,7 +1314,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.particlesystem"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.particlesystem"
   assetPath: Packages/com.unity.modules.particlesystem
   name: com.unity.modules.particlesystem
   displayName: Particle System
@@ -1402,7 +1402,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.physics"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.physics"
   assetPath: Packages/com.unity.modules.physics
   name: com.unity.modules.physics
   displayName: Physics
@@ -1490,7 +1490,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.physics2d"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.physics2d"
   assetPath: Packages/com.unity.modules.physics2d
   name: com.unity.modules.physics2d
   displayName: Physics 2D
@@ -1578,7 +1578,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.screencapture"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.screencapture"
   assetPath: Packages/com.unity.modules.screencapture
   name: com.unity.modules.screencapture
   displayName: Screen Capture
@@ -1670,7 +1670,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.terrain"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.terrain"
   assetPath: Packages/com.unity.modules.terrain
   name: com.unity.modules.terrain
   displayName: Terrain
@@ -1758,7 +1758,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.terrainphysics"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.terrainphysics"
   assetPath: Packages/com.unity.modules.terrainphysics
   name: com.unity.modules.terrainphysics
   displayName: Terrain Physics
@@ -1854,7 +1854,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.tilemap"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.tilemap"
   assetPath: Packages/com.unity.modules.tilemap
   name: com.unity.modules.tilemap
   displayName: Tilemap
@@ -1945,7 +1945,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.ui"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.ui"
   assetPath: Packages/com.unity.modules.ui
   name: com.unity.modules.ui
   displayName: UI
@@ -2033,7 +2033,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.uielements"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.uielements"
   assetPath: Packages/com.unity.modules.uielements
   name: com.unity.modules.uielements
   displayName: UIElements
@@ -2141,7 +2141,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.umbra"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.umbra"
   assetPath: Packages/com.unity.modules.umbra
   name: com.unity.modules.umbra
   displayName: Umbra
@@ -2229,7 +2229,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.unityanalytics"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.unityanalytics"
   assetPath: Packages/com.unity.modules.unityanalytics
   name: com.unity.modules.unityanalytics
   displayName: Unity Analytics
@@ -2324,7 +2324,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.unitywebrequest"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.unitywebrequest"
   assetPath: Packages/com.unity.modules.unitywebrequest
   name: com.unity.modules.unitywebrequest
   displayName: Unity Web Request
@@ -2412,7 +2412,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.unitywebrequestassetbundle"
   assetPath: Packages/com.unity.modules.unitywebrequestassetbundle
   name: com.unity.modules.unitywebrequestassetbundle
   displayName: Unity Web Request Asset Bundle
@@ -2508,7 +2508,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.unitywebrequestaudio"
   assetPath: Packages/com.unity.modules.unitywebrequestaudio
   name: com.unity.modules.unitywebrequestaudio
   displayName: Unity Web Request Audio
@@ -2604,7 +2604,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.unitywebrequesttexture"
   assetPath: Packages/com.unity.modules.unitywebrequesttexture
   name: com.unity.modules.unitywebrequesttexture
   displayName: Unity Web Request Texture
@@ -2700,7 +2700,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.unitywebrequestwww"
   assetPath: Packages/com.unity.modules.unitywebrequestwww
   name: com.unity.modules.unitywebrequestwww
   displayName: Unity Web Request WWW
@@ -2812,7 +2812,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.vectorgraphics"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.vectorgraphics"
   assetPath: Packages/com.unity.modules.vectorgraphics
   name: com.unity.modules.vectorgraphics
   displayName: Vector Graphics
@@ -2919,7 +2919,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.vehicles"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.vehicles"
   assetPath: Packages/com.unity.modules.vehicles
   name: com.unity.modules.vehicles
   displayName: Vehicles
@@ -3011,7 +3011,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.video"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.video"
   assetPath: Packages/com.unity.modules.video
   name: com.unity.modules.video
   displayName: Video
@@ -3111,7 +3111,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.vr"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.vr"
   assetPath: Packages/com.unity.modules.vr
   name: com.unity.modules.vr
   displayName: VR
@@ -3214,7 +3214,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.wind"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.wind"
   assetPath: Packages/com.unity.modules.wind
   name: com.unity.modules.wind
   displayName: Wind
@@ -3302,7 +3302,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.xr"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.xr"
   assetPath: Packages/com.unity.modules.xr
   name: com.unity.modules.xr
   displayName: XR
@@ -3402,7 +3402,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.subsystems"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.subsystems"
   assetPath: Packages/com.unity.modules.subsystems
   name: com.unity.modules.subsystems
   displayName: Subsystems
@@ -3494,7 +3494,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.0
   source: 2
-  resolvedPath: "D:\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF12\\Library\\PackageCache\\com.unity.modules.hierarchycore"
+  resolvedPath: "D:\\2026\u82E5\u30AF\u30EA\\\u82E5\u30AF\u30EA\u30B2\u30FC\u30E0\uFF13\\Library\\PackageCache\\com.unity.modules.hierarchycore"
   assetPath: Packages/com.unity.modules.hierarchycore
   name: com.unity.modules.hierarchycore
   displayName: Hierarchy Core
