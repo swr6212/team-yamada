@@ -128,6 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 157272476}
+  - component: {fileID: 157272477}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -151,6 +152,20 @@ Transform:
   - {fileID: 1583427511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157272477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157272475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e103030a06aae4daf96257fc3a0a84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  hp: 3
+  moveSpeed: 2
 --- !u!1 &159826237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2479,8 +2494,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMove
   moveSpeed: 20
-  wallMaxValue: 3.17781
-  wallMinValue: -2.83219
+  wallMaxX: 2.9
+  wallMinX: -3.1
+  wallMinZ: 0
+  wallMaxZ: 5
   bullet: {fileID: 2318740779097469917, guid: 40e9e3597c0c49a4fa687404c92a4eed, type: 3}
   firePoint: {fileID: 596690363}
   fireInterval: 0.5
