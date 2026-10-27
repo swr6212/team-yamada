@@ -1,0 +1,137 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\team-yamada\\My project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|d:\\team-yamada\\my project\\assets\\scripts\\slot\\materiaslotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slot\\materiaslotmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\team-yamada\\My project\\assets\\scripts\\slot\\materiadrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slot\\materiadrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|D:\\team-yamada\\My project\\assets\\scripts\\slot\\equippedweaponslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slot\\equippedweaponslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\team-yamada\\My project\\Assets\\Scripts\\WeaponDropArea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\WeaponDropArea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\team-yamada\\My project\\Assets\\Scripts\\EquippedWeaponSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\EquippedWeaponSlot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\team-yamada\\My project\\Assets\\Scripts\\MateriaSlotManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\MateriaSlotManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\team-yamada\\My project\\Assets\\Scripts\\WeaponDrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\WeaponDrag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EquippedWeaponSlot.cs",
+              "DocumentMoniker": "D:\\team-yamada\\My project\\Assets\\Scripts\\Slot\\EquippedWeaponSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Slot\\EquippedWeaponSlot.cs",
+              "ToolTip": "D:\\team-yamada\\My project\\Assets\\Scripts\\Slot\\EquippedWeaponSlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Slot\\EquippedWeaponSlot.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAIwAoAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T08:36:27.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MateriaSlotManager.cs",
+              "DocumentMoniker": "D:\\team-yamada\\My project\\Assets\\Scripts\\Slot\\MateriaSlotManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Slot\\MateriaSlotManager.cs",
+              "ToolTip": "D:\\team-yamada\\My project\\Assets\\Scripts\\Slot\\MateriaSlotManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Slot\\MateriaSlotManager.cs",
+              "ViewState": "AQIAAL8AAAAAAAAAAAAgwPIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T08:28:41.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MateriaDrag.cs",
+              "DocumentMoniker": "D:\\team-yamada\\My project\\Assets\\Scripts\\Slot\\MateriaDrag.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Slot\\MateriaDrag.cs",
+              "ToolTip": "D:\\team-yamada\\My project\\Assets\\Scripts\\Slot\\MateriaDrag.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Slot\\MateriaDrag.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAgwLsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T08:28:07.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EquippedWeaponSlot.cs",
+              "DocumentMoniker": "D:\\team-yamada\\My project\\Assets\\Scripts\\EquippedWeaponSlot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\EquippedWeaponSlot.cs",
+              "ToolTip": "D:\\team-yamada\\My project\\Assets\\Scripts\\EquippedWeaponSlot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\EquippedWeaponSlot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T08:24:39.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MateriaSlotManager.cs",
+              "DocumentMoniker": "D:\\team-yamada\\My project\\Assets\\Scripts\\MateriaSlotManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MateriaSlotManager.cs",
+              "ToolTip": "D:\\team-yamada\\My project\\Assets\\Scripts\\MateriaSlotManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MateriaSlotManager.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAmwEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T08:21:24.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeaponDropArea.cs",
+              "DocumentMoniker": "D:\\team-yamada\\My project\\Assets\\Scripts\\WeaponDropArea.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponDropArea.cs",
+              "ToolTip": "D:\\team-yamada\\My project\\Assets\\Scripts\\WeaponDropArea.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WeaponDropArea.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T07:20:12.98Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeaponDrag.cs",
+              "DocumentMoniker": "D:\\team-yamada\\My project\\Assets\\Scripts\\WeaponDrag.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WeaponDrag.cs",
+              "ToolTip": "D:\\team-yamada\\My project\\Assets\\Scripts\\WeaponDrag.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WeaponDrag.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAAAIwGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-23T07:19:43.97Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
