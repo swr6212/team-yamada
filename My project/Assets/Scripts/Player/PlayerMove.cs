@@ -4,8 +4,10 @@ using UnityEngine.InputSystem;
 public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private float moveSpeed;
-    [SerializeField] private float wallMaxValue;
-    [SerializeField]private float wallMinValue;
+    [SerializeField] private float wallMaxX;
+    [SerializeField]private float wallMinX;
+    [SerializeField] private float wallMinZ;
+    [SerializeField] private float wallMaxZ;
     [SerializeField] private GameObject bullet;
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireInterval = 0.5f;
@@ -33,12 +35,13 @@ public class PlayerMove : MonoBehaviour
     private void FixedUpdate()
     { 
         float displacement = inputDirections.x * moveSpeed * Time.fixedDeltaTime;
+        float disZ = inputDirections.y * moveSpeed * Time.fixedDeltaTime;
         float newX = rb.position.x + displacement;
-        float restrictions = Mathf.Clamp(newX,wallMinValue, wallMaxValue);
-        Vector3 movedPos = new Vector3(restrictions,rb.position.y,rb.position.z);
+        float newZ = rb.position.z + disZ;
+        float restrictions = Mathf.Clamp(newX,wallMinX, wallMaxX);
+        float resZ = Mathf.Clamp(newZ, wallMinZ, wallMaxZ);
+        Vector3 movedPos = new Vector3(restrictions,rb.position.y,resZ);
         rb.MovePosition(movedPos);
-        
-
     }
 
     private void Shoot()
