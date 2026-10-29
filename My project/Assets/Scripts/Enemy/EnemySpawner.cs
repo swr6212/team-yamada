@@ -32,7 +32,7 @@ public class EnemySpawner : MonoBehaviour
         {
             int enemyNum = Random.Range(0,forWork.Count);
             Vector3 enemyPos = forWork[enemyNum].position;
-            MoveType enemyType = (MoveType)Random.Range(0, 3);
+            MoveType enemyType = (MoveType)Random.Range(0, 4);
             GameObject newEnemy = Instantiate(enemyPrefab, enemyPos, Quaternion.identity);
             Enemy enemy = newEnemy.GetComponent<Enemy>();
             enemy.Setup(enemyType);

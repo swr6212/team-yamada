@@ -4,7 +4,8 @@ public enum MoveType
 {
     Normal,
     Stop,
-    Accelerate
+    Accelerate,
+    Shoot
 }
 
 public class Enemy : MonoBehaviour
@@ -14,6 +15,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float changeZ;
     [SerializeField] private float acceleration;
     [SerializeField] private MoveType moveType;
+    [SerializeField] private EnemyShooter enemyShooter;
     private int nowhp;
     private bool hasTriggered = false;//”­“®‚µ‚½‚©
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,6 +27,10 @@ public class Enemy : MonoBehaviour
     void Awake()
     {
         nowhp = hp;
+        if(enemyShooter != null )
+        {
+            enemyShooter.enabled = false;
+        }
     }
 
     void Update()
@@ -43,6 +49,13 @@ public class Enemy : MonoBehaviour
                         break;
                     case MoveType.Accelerate:
                         moveSpeed *= acceleration;
+                        break;
+                    case MoveType.Shoot:
+                        moveSpeed = 0;
+                        if(enemyShooter != null)
+                        {
+                            enemyShooter.enabled = true;
+                        }
                         break;
                 }
                 hasTriggered = true;
