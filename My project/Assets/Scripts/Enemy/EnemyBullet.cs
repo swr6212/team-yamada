@@ -5,9 +5,11 @@ public class EnemyBullet : MonoBehaviour
 {
     [Header("弾の設定")]
     [SerializeField] private float lifeTime = 5f;
+    [SerializeField] private int damage = 1;
 
     private Vector3 moveDirection;
     private float bulletSpeed;
+    private bool hasHit = false;
 
     public void SetDirection(Vector3 direction, float speed)
     {
@@ -29,7 +31,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            GiveDamage(collision.gameObject);
         }
     }
 
@@ -37,7 +39,26 @@ public class EnemyBullet : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject);
+            GiveDamage(other.gameObject);
         }
+    }
+
+    private void GiveDamage(GameObject target)
+    {
+        if (hasHit)
+        {
+            return;
+        }
+        if(!target.CompareTag("Player"))
+        {
+            return;
+        }
+        hasHit = true;
+        PlayerHealth health = target.GetComponentInParent<PlayerHealth>();
+        if (health != null)
+        {
+            health.TakeDamage(damage);
+        }
+        Destroy(gameObject);
     }
 }
