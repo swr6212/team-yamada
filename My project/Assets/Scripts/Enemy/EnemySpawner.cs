@@ -32,7 +32,20 @@ public class EnemySpawner : MonoBehaviour
         {
             int enemyNum = Random.Range(0,forWork.Count);
             Vector3 enemyPos = forWork[enemyNum].position;
-            MoveType enemyType = (MoveType)Random.Range(0, 4);
+            int roll = Random.Range(0, 100);
+            MoveType enemyType;
+            if(roll < 80)
+            {
+                enemyType = MoveType.Normal;
+            }
+            else if(roll < 90)
+            {
+                enemyType = MoveType.Accelerate;
+            }
+            else
+            {
+                enemyType = MoveType.Shoot;
+            }
             GameObject newEnemy = Instantiate(enemyPrefab, enemyPos, Quaternion.identity);
             Enemy enemy = newEnemy.GetComponent<Enemy>();
             enemy.Setup(enemyType);
