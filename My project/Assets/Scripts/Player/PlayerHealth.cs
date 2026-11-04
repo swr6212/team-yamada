@@ -5,7 +5,8 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private int maxHp = 10;
     [SerializeField]private GameObject playerObject;
     private int nowHp;
-    
+    [SerializeField] private GameManager gameManager;
+
     void Awake()
     {
         nowHp = maxHp;
@@ -21,6 +22,7 @@ public class PlayerHealth : MonoBehaviour
         nowHp -= damage;
         if (nowHp <= 0)
         {
+            gameManager.GameOver();
             Debug.Log("ゲームオーバー");
         }
     }
