@@ -18,11 +18,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] private EnemyShooter enemyShooter;
     private int nowhp;
     private bool hasTriggered = false;//”­“®‚µ‚½‚©
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
     void Awake()
     {
@@ -60,12 +55,15 @@ public class Enemy : MonoBehaviour
                 }
                 hasTriggered = true;
             }
-            return;
         }
     }
 
     public void TakeDamage(int damage)
     {
+        if(nowhp <= 0)
+        {
+            return;
+        }
         nowhp -= damage;
         if(nowhp <= 0)
         {

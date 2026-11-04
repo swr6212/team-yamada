@@ -3,7 +3,6 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int maxHp = 10;
-    [SerializeField]private GameObject playerObject;
     private int nowHp;
     [SerializeField] private GameManager gameManager;
 
@@ -17,9 +16,9 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("ダメージ " + damage + " 残り " + nowHp);
         if (nowHp <= 0)
         {
-            return; 
+            return;
         }
-        nowHp -= damage;
+        nowHp -= damage;   
         if (nowHp <= 0)
         {
             gameManager.GameOver();

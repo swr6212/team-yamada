@@ -1275,6 +1275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   gameOverUI: {fileID: 952661638}
+  titleSceneName: Taitol
 --- !u!4 &546110424
 Transform:
   m_ObjectHideFlags: 0

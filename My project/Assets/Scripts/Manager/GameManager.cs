@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    private bool isGameOver = false;
     [SerializeField] private GameObject gameOverUI;
+    [SerializeField] private string titleSceneName; // タイトルシーン名（Tキーで移動）
+    private bool isGameOver = false;
 
     void Start()
     {
@@ -27,8 +29,29 @@ public class GameManager : MonoBehaviour
             {
                 // ゲームオーバーUIが表示されている状態でRキーが押された場合、ゲームを再起動する
                 Time.timeScale = 1f; // ゲームを再開する
-                UnityEngine.SceneManagement.SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            if(Keyboard.current.tKey.wasPressedThisFrame)
+            {
+                Time.timeScale = 1f; // ゲームを再開する
+                SceneManager.LoadScene(titleSceneName);
             }
         }
+#if UNITY_EDITOR
+        if(Keyboard.current.f1Key.wasPressedThisFrame)
+        {
+            GameOver();
+        }
+        
+        if(Keyboard.current.f2Key.wasPressedThisFrame)
+        {
+            Enemy[] enemies = FindObjectsByType<Enemy>(FindObjectsSortMode.None);
+            foreach(Enemy e in enemies)
+            {
+                e.TakeDamage(999);
+            }
+        }
+#endif
+
     }
 }
