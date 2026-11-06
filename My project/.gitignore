@@ -18,3 +18,7 @@
 *.opendb
 *.VC.db
 sysinfo.txt
+
+# Unity auto recovery backups
+_Recovery/
+_Recovery.meta
