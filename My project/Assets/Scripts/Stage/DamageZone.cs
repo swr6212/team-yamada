@@ -7,7 +7,6 @@ public class DamageZone : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("“ü‚Á‚½: " + other.name);
         Enemy enemy = other.GetComponentInParent<Enemy>();
         if(enemy == null)
         {

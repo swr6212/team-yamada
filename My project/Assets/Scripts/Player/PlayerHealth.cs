@@ -13,7 +13,6 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Debug.Log("ダメージ " + damage + " 残り " + nowHp);
         if (nowHp <= 0)
         {
             return;
@@ -21,7 +20,7 @@ public class PlayerHealth : MonoBehaviour
         nowHp -= damage;   
         if (nowHp <= 0)
         {
-            gameManager.GameOver();
+            gameManager.ShowResult();
             Debug.Log("ゲームオーバー");
         }
     }

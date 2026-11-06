@@ -68,6 +68,8 @@ public class Enemy : MonoBehaviour
         if(nowhp <= 0)
         {
             Destroy(gameObject);
+            GameManager.AddDefeatedEnemy();
+            GameManager.AddScore(10);
         }
     }
 
