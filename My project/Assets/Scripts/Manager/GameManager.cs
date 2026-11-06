@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour
         elapsedSeconds = (int)(Time.time - startTime);
         minutes = elapsedSeconds / 60;
         seconds = elapsedSeconds % 60;
-        Debug.Log("SCORE: " + score + " DEFEATED: " + defeatedEnemies + " TIME: " + minutes.ToString("00") + ":" + seconds.ToString("00"));
         // スコア、倒した敵の数、経過時間をUIに表示
         scoreText.text = "SCORE: " + score;
         defeatedEnemiesText.text = "DEFEATED: " + defeatedEnemies;
