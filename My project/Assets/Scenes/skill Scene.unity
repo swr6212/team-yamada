@@ -984,57 +984,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.1124712, y: -0.69511163, z: 0.11148796, w: 0.7012421}
+  m_LocalPosition: {x: 8.47, y: 6.2, z: -5.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &974633087
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 974633089}
-  - component: {fileID: 974633088}
-  m_Layer: 0
-  m_Name: CSVReader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &974633088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974633087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c58af242987cf7a43a7b900b1052c411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GameDataReader
---- !u!4 &974633089
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 974633087}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 492.73038, y: 0.00001, z: 12647.248}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 18.224, y: -89.497, z: 0}
 --- !u!1 &1043982643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,7 +1231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa27ea4868f6faf4590b34e811f7d663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MateriaDrag
-  materiaName: "\u30DE\u30C6\u30EA\u30A2"
+  materiaName: "\u30DE\u30C6\u30EA\u30A21"
 --- !u!1 &1422493815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +1410,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa27ea4868f6faf4590b34e811f7d663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MateriaDrag
-  materiaName: "\u30DE\u30C6\u30EA\u30A2"
+  materiaName: "\u30DE\u30C6\u30EA\u30A2\uFF12"
 --- !u!1 &1895366862
 GameObject:
   m_ObjectHideFlags: 0
@@ -1568,7 +1524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.3184815}
   m_AnchorMax: {x: 0.17374998, y: 1}
-  m_AnchoredPosition: {x: -1.000061, y: 0}
+  m_AnchoredPosition: {x: -1, y: 0}
   m_SizeDelta: {x: -1.9999, y: -0.000061035}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2146569783
@@ -1632,4 +1588,3 @@ SceneRoots:
   - {fileID: 203844589}
   - {fileID: 168305654}
   - {fileID: 104695042}
-  - {fileID: 974633089}
