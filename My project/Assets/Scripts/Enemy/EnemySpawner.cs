@@ -1,17 +1,20 @@
 using UnityEngine;
 using System.Collections.Generic;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField]private List<Transform> slots;
     [SerializeField] private List<WaveData> waveDatas;
     [SerializeField] private GameManager gameManager;
+    [SerializeField] private TMP_Text waveText;
     private int currentWave = 0;
     private float waveTimer;
     private float spawnTimer;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        ShowWaveText(); 
     }
 
     // Update is called once per frame
@@ -31,6 +34,7 @@ public class EnemySpawner : MonoBehaviour
                 gameManager.ShowResult();
                 return;
             }
+            ShowWaveText();
             waveTimer = 0;
         }
         spawnTimer += Time.deltaTime;
@@ -75,5 +79,11 @@ public class EnemySpawner : MonoBehaviour
             }
         }
         return enemyDatas[0];
+    }
+
+    void ShowWaveText()
+    {
+        waveText.text = "WAVE " + (currentWave + 1);
+        waveText.gameObject.SetActive(true);
     }
 }
