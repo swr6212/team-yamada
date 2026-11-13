@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class InteractZone : MonoBehaviour
 {
     [SerializeField] private GameObject interactUI;
+    private PlayerMove playerMove;
     private bool isPlayerInZone = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,7 +17,7 @@ public class InteractZone : MonoBehaviour
     {
         if (Keyboard.current.eKey.wasPressedThisFrame && isPlayerInZone)
         {
-            interactUI.SetActive(!interactUI.activeSelf);
+            SetPanel(!interactUI.activeSelf);
         }
     }
 
@@ -26,6 +27,7 @@ public class InteractZone : MonoBehaviour
         if(player != null)
         {
             isPlayerInZone = true;
+            playerMove = player;
         }
     }
 
@@ -35,7 +37,14 @@ public class InteractZone : MonoBehaviour
         if(player != null)
         {
             isPlayerInZone = false;
-            interactUI.SetActive(false);
+            SetPanel(false);
+            playerMove = null;
         }
+    }
+
+    private void SetPanel(bool open)
+    {
+        interactUI.SetActive(open);
+        playerMove.SetMove(!open);
     }
 }

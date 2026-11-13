@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float wallMaxZ;
     private Vector2 inputDirections;
     private Rigidbody rb;
+    private bool isMove = true;
 
     void Start()
     {
@@ -30,6 +31,8 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     { 
+        if (!isMove) return;
+
         float displacement = inputDirections.x * moveSpeed * Time.fixedDeltaTime;
         float disZ = inputDirections.y * moveSpeed * Time.fixedDeltaTime;
         float newX = rb.position.x + displacement;
@@ -38,5 +41,14 @@ public class PlayerMove : MonoBehaviour
         float resZ = Mathf.Clamp(newZ, wallMinZ, wallMaxZ);
         Vector3 movedPos = new Vector3(restrictions,rb.position.y,resZ);
         rb.MovePosition(movedPos);
+    }
+
+    public void SetMove(bool move)
+    {
+        isMove = move;
+        if(!move)
+        {
+            inputDirections = Vector2.zero;
+        }
     }
 }
