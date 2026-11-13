@@ -465,6 +465,8 @@ MonoBehaviour:
       appearanceWeight: 100
   gameManager: {fileID: 546110423}
   waveText: {fileID: 1385694531}
+  damageZ: -11.5
+  playerTransform: {fileID: 2062055967}
 --- !u!1 &157918315
 GameObject:
   m_ObjectHideFlags: 0

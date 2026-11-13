@@ -8,6 +8,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private List<WaveData> waveDatas;
     [SerializeField] private GameManager gameManager;
     [SerializeField] private TMP_Text waveText;
+    [SerializeField] private float damageZ;
+    [SerializeField] private Transform playerTransform;
     private int currentWave = 0;
     private float waveTimer;
     private float spawnTimer;
@@ -56,7 +58,7 @@ public class EnemySpawner : MonoBehaviour
             EnemyData enemyData = PickEnemy(wave.enemyDatas);
             GameObject newEnemy = Instantiate(enemyData.enemyPrefab, enemyPos, Quaternion.identity);
             Enemy enemy = newEnemy.GetComponent<Enemy>();
-            enemy.Setup(enemyData.moveType);
+            enemy.Setup(enemyData.moveType, playerTransform, damageZ);
             forWork.RemoveAt(enemyNum);
         }
 

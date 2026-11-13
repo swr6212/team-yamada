@@ -54,6 +54,9 @@ MonoBehaviour:
   acceleration: 10
   moveType: 0
   enemyShooter: {fileID: 2315108955168949903}
+  playerHealth: {fileID: 0}
+  damage: 0
+  homingZ: -5
 --- !u!114 &2315108955168949903
 MonoBehaviour:
   m_ObjectHideFlags: 0

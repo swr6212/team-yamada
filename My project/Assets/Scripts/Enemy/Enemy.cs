@@ -16,8 +16,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float acceleration;
     [SerializeField] private MoveType moveType;
     [SerializeField] private EnemyShooter enemyShooter;
+    [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private int damage;
+    [SerializeField] private float homingZ;
     private int nowhp;
     private bool hasTriggered = false;//”­“®‚µ‚½‚©
+    private float damageZ;
+    private Transform playerTransform;
 
     void Awake()
     {
@@ -31,6 +36,15 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         Move();
+        if(transform.position.z <= damageZ)
+        {
+            if(playerHealth != null)
+            {
+                playerHealth.TakeDamage(damage);
+            }
+            Destroy(gameObject);
+            return;
+        }
         if (!hasTriggered)
         {
             if (transform.position.z <= changeZ)
@@ -75,13 +89,30 @@ public class Enemy : MonoBehaviour
 
     private void Move()
     {
-        transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
+        if(playerTransform != null && homingZ >= transform.position.z)
+        {
+            Vector3 direction = (playerTransform.position - transform.position);
+            direction.y = 0;
+            direction.z = -1;
+            direction.x = Mathf.Clamp(direction.x, -1, 1);
+            direction = direction.normalized;
+            transform.Translate(direction * moveSpeed * Time.deltaTime, Space.World);
+        }
+        else
+        {
+            transform.Translate(Vector3.back * moveSpeed * Time.deltaTime, Space.World);
+        }
     }
 
-    public void Setup(MoveType type)
+    public void Setup(MoveType type, Transform playerTransform, float damageZ)
     {
         moveType = type;
-
+        this.playerTransform = playerTransform;
+        this.damageZ = damageZ;
+        if(playerTransform != null)
+        {
+            playerHealth = playerTransform.GetComponent<PlayerHealth>();
+        }
     }
 
 }
