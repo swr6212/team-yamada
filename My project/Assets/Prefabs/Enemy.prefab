@@ -57,6 +57,7 @@ MonoBehaviour:
   playerHealth: {fileID: 0}
   damage: 0
   homingZ: -5
+  stopDuration: 5
 --- !u!114 &2315108955168949903
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -19,10 +19,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private int damage;
     [SerializeField] private float homingZ;
+    [SerializeField] private float stopDuration;
     private int nowhp;
     private bool hasTriggered = false;//”­“®‚µ‚½‚©
     private float damageZ;
     private Transform playerTransform;
+    bool isStop = false;
+    float stopTimer = 0;
 
     void Awake()
     {
@@ -54,14 +57,16 @@ public class Enemy : MonoBehaviour
                     case MoveType.Normal:
                         break;
                     case MoveType.Stop:
-                        moveSpeed = 0;
+                        isStop = true;
+                        stopTimer = 0;
                         break;
                     case MoveType.Accelerate:
                         moveSpeed *= acceleration;
                         break;
                     case MoveType.Shoot:
-                        moveSpeed = 0;
-                        if(enemyShooter != null)
+                        isStop = true;
+                        stopTimer = 0;
+                        if (enemyShooter != null)
                         {
                             enemyShooter.enabled = true;
                         }
@@ -69,6 +74,18 @@ public class Enemy : MonoBehaviour
                 }
                 hasTriggered = true;
             }
+        }
+        if (isStop)
+        {
+            stopTimer += Time.deltaTime;
+            if (stopTimer >= stopDuration)
+            {
+                isStop = false;
+            }
+        }
+        if (stopTimer >= stopDuration && enemyShooter != null && enemyShooter.enabled)
+        {
+            enemyShooter.enabled = false;
         }
     }
 
@@ -89,6 +106,10 @@ public class Enemy : MonoBehaviour
 
     private void Move()
     {
+        if(isStop)
+        {
+            return;
+        }
         if(playerTransform != null && homingZ >= transform.position.z)
         {
             Vector3 direction = (playerTransform.position - transform.position);
