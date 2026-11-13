@@ -30,7 +30,7 @@ public class Taitol : MonoBehaviour
     private void ChangeScene()
     {
         //""‚Ì’†‚Í‘JˆÚ‚µ‚½‚¢ƒV[ƒ“–¼
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene("WaitingRoom");
     }
 
 
