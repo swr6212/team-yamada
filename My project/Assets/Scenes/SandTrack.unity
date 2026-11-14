@@ -438,7 +438,7 @@ MonoBehaviour:
     enemyMinRate: 1
     enemyMaxRate: 5
     enemyDatas:
-    - moveType: 2
+    - moveType: 1
       enemyPrefab: {fileID: 3693554749338190364, guid: d811a299628cdc148a55b491c5e01548, type: 3}
       appearanceWeight: 100
   - waveDuration: 5
@@ -446,15 +446,9 @@ MonoBehaviour:
     enemyMinRate: 1
     enemyMaxRate: 5
     enemyDatas:
-    - moveType: 2
+    - moveType: 1
       enemyPrefab: {fileID: 3693554749338190364, guid: d811a299628cdc148a55b491c5e01548, type: 3}
-      appearanceWeight: 10
-    - moveType: 0
-      enemyPrefab: {fileID: 3693554749338190364, guid: d811a299628cdc148a55b491c5e01548, type: 3}
-      appearanceWeight: 80
-    - moveType: 3
-      enemyPrefab: {fileID: 3693554749338190364, guid: d811a299628cdc148a55b491c5e01548, type: 3}
-      appearanceWeight: 10
+      appearanceWeight: 100
   - waveDuration: 5
     spawnInterval: 1
     enemyMinRate: 1
