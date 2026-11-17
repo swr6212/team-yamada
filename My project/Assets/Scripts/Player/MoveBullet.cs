@@ -6,6 +6,7 @@ public class MoveBullet : MonoBehaviour
     [SerializeField] private Rigidbody rb;
     [SerializeField] private float deleteTime = 6.0f;
     [SerializeField] private int damage;
+    [SerializeField] private GameObject hitEffect;
     void Start()
     {
     }
@@ -27,6 +28,7 @@ public class MoveBullet : MonoBehaviour
         if(enemy != null)
         {
             enemy.TakeDamage(damage);
+            //Instantiate(hitEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

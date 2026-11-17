@@ -4456,9 +4456,9 @@ Light:
   m_GameObject: {fileID: 1810060719}
   m_Enabled: 1
   serializedVersion: 12
-  m_Type: 0
-  m_Color: {r: 0.73899364, g: 1, b: 1, a: 1}
-  m_Intensity: 1000
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
   m_Range: 100
   m_SpotAngle: 31.60492
   m_InnerSpotAngle: 0
@@ -5470,7 +5470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d5c19f0a7419749823859c9ac2bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
-  bullet: {fileID: 2318740779097469917, guid: 40e9e3597c0c49a4fa687404c92a4eed, type: 3}
+  bullet: {fileID: 7544612950525634718, guid: 2309ceed394465d44aead5f5ffce752d, type: 3}
   firePoint: {fileID: 1672863119}
   fireInterval: 1
 --- !u!1 &2068236545

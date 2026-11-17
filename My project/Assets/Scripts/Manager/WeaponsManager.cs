@@ -1,16 +1,21 @@
 using UnityEngine;
+using System.Collections.Generic;
 
-public class WeaponsManager : MonoBehaviour
+public static class WeaponsManager
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    static List<int> weaponList = new List<int>();
+    static public void AddWeapon(int weaponId)
     {
-        
+        if (!weaponList.Contains(weaponId))
+        {
+            weaponList.Add(weaponId);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    static public List<int> TakeAll()
     {
-        
+        List<int> allWeapons = new List<int>(weaponList);
+        weaponList.Clear();
+        return allWeapons;
     }
 }
