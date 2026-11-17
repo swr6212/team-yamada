@@ -60,6 +60,7 @@ MonoBehaviour:
   stopDuration: 5
   dropRate: 0.5
   dropWeaponId: 0
+  dropMoney: 0
 --- !u!114 &2315108955168949903
 MonoBehaviour:
   m_ObjectHideFlags: 0
