@@ -20,6 +20,8 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int damage;
     [SerializeField] private float homingZ;
     [SerializeField] private float stopDuration;
+    [SerializeField]private float dropRate = 0.5f; //ドロップ率
+    [SerializeField]private int dropWeaponId = 0; //ドロップする武器のID
     private int nowhp;
     private bool hasTriggered = false;//発動したか
     private float damageZ;
@@ -101,6 +103,10 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
             GameManager.AddDefeatedEnemy();
             GameManager.AddScore(10);
+            if(Random.value < dropRate)
+            {
+                WeaponsManager.AddWeapon(dropWeaponId);
+            }
         }
     }
 
