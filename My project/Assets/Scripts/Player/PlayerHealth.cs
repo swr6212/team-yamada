@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
             return;
         }
         playerStatusList = PlayerStatusLoader.Load(csv); 
+        PlayerData.SetStatusList(playerStatusList);
         int playerLevel = PlayerData.Level;
         if(playerLevel < 1 || playerLevel > playerStatusList.Count)
         {

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public static class PlayerData
 {
@@ -6,6 +7,7 @@ public static class PlayerData
     private const int maxMoney = 9999999;
     private static int level = 1;
     private static int exp = 0;
+    private static List<PlayerStatus> expList;
 
     public static int Money
     {
@@ -42,6 +44,11 @@ public static class PlayerData
             return;
         }
         exp += amount;
+        while (expList != null && level < expList.Count && exp >= expList[level - 1].needExp)
+        {
+            exp -= expList[level - 1].needExp;
+            level++;
+        }
     }
 
     public static bool TrySpend(int amount)
@@ -59,5 +66,10 @@ public static class PlayerData
             nowMoney -= amount;
             return true;
         }
+    }
+
+    public static void SetStatusList(List<PlayerStatus> list)
+    {
+        expList = list;
     }
 }
