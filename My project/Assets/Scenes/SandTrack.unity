@@ -5474,6 +5474,7 @@ MonoBehaviour:
   bullet: {fileID: 7544612950525634718, guid: 2309ceed394465d44aead5f5ffce752d, type: 3}
   firePoint: {fileID: 1672863119}
   fireInterval: 1
+  csv: {fileID: 4900000, guid: 55fb17386c0cbc449a7be2214df3eb1a, type: 3}
 --- !u!1 &2068236545
 GameObject:
   m_ObjectHideFlags: 0

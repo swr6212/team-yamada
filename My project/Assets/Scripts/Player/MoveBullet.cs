@@ -22,6 +22,11 @@ public class MoveBullet : MonoBehaviour
         rb.linearVelocity = direction.normalized * moveSpeed;
     }
 
+    public void SendDamage(int damageAmount)
+    {
+        damage = damageAmount;
+    }
+
     public void OnTriggerEnter(Collider other)
     { 
         Enemy enemy = other.GetComponentInParent<Enemy>();

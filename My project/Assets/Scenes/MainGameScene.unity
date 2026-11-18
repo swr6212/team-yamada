@@ -967,9 +967,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d5c19f0a7419749823859c9ac2bb81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShoot
-  bullet: {fileID: 2318740779097469917, guid: 40e9e3597c0c49a4fa687404c92a4eed, type: 3}
+  bullet: {fileID: 7544612950525634718, guid: 2309ceed394465d44aead5f5ffce752d, type: 3}
   firePoint: {fileID: 387308936}
   fireInterval: 1
+  csv: {fileID: 4900000, guid: 55fb17386c0cbc449a7be2214df3eb1a, type: 3}
 --- !u!114 &345210568
 MonoBehaviour:
   m_ObjectHideFlags: 0
