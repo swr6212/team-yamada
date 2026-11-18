@@ -5,6 +5,7 @@ public static class PlayerData
     private static int nowMoney;
     private const int maxMoney = 9999999;
     private static int level = 1;
+    private static int exp = 0;
 
     public static int Money
     {
@@ -14,6 +15,11 @@ public static class PlayerData
     public static int Level
     {
         get { return level; }
+    }
+
+    public static int Exp
+    {
+        get { return exp; }
     }
 
     public static void AddMoney(int amount)
@@ -28,7 +34,16 @@ public static class PlayerData
             nowMoney = maxMoney;
         }
     }
-   
+
+    public static void AddExp(int amount)
+    {
+        if (amount <= 0)
+        {
+            return;
+        }
+        exp += amount;
+    }
+
     public static bool TrySpend(int amount)
     {
         if(amount <= 0)
