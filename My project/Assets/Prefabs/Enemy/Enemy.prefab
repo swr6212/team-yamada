@@ -58,7 +58,7 @@ MonoBehaviour:
   damage: 0
   homingZ: -5
   stopDuration: 5
-  dropRate: 0.5
+  dropRate: 0.3
   dropWeaponId: 0
   dropMoney: 0
 --- !u!114 &2315108955168949903
