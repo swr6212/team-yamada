@@ -8,6 +8,7 @@ public static class PlayerData
     private static int level = 1;
     private static int exp = 0;
     private static List<PlayerStatus> expList;
+    public static event System.Action OnLevelUp;
 
     public static int Money
     {
@@ -48,6 +49,7 @@ public static class PlayerData
         {
             exp -= expList[level - 1].needExp;
             level++;
+            OnLevelUp?.Invoke();
         }
     }
 

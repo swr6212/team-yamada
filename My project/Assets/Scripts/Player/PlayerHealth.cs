@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
     private int nowHp;
     [SerializeField] private GameManager gameManager;
     List<PlayerStatus> playerStatusList;
+    private int oldMaxHp = 0;
 
     void Awake()
     {
@@ -42,5 +43,32 @@ public class PlayerHealth : MonoBehaviour
             gameManager.ShowResult();
             Debug.Log("ゲームオーバー");
         }
+    }
+
+    void HandleLevelUp()
+    {
+        oldMaxHp = maxHp;
+        int playerLevel = PlayerData.Level;
+        if (playerStatusList == null || playerLevel < 1 || playerLevel > playerStatusList.Count)
+        {
+            Debug.LogError("Invalid player level: " + playerLevel);
+            return;
+        }
+        if(nowHp <= 0)
+        {
+            return;
+        }
+        maxHp = playerStatusList[playerLevel - 1].hp;
+        nowHp += maxHp - oldMaxHp;
+    }
+
+    void OnEnable()
+    {
+        PlayerData.OnLevelUp += HandleLevelUp;
+    }
+
+    void OnDisable()
+    {
+        PlayerData.OnLevelUp -= HandleLevelUp;
     }
 }
