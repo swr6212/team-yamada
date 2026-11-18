@@ -4,9 +4,16 @@ public static class PlayerData
 {
     private static int nowMoney;
     private const int maxMoney = 9999999;
+    private static int level = 1;
+
     public static int Money
     {
         get { return nowMoney; }
+    }
+
+    public static int Level
+    {
+        get { return level; }
     }
 
     public static void AddMoney(int amount)
