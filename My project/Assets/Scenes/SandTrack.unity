@@ -5457,6 +5457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
   maxHp: 10
+  csv: {fileID: 4900000, guid: 55fb17386c0cbc449a7be2214df3eb1a, type: 3}
   gameManager: {fileID: 546110423}
 --- !u!114 &2062055972
 MonoBehaviour:
