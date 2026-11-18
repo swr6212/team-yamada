@@ -8,8 +8,10 @@ public class PlayerShoot : MonoBehaviour
     [SerializeField] private Transform firePoint;
     [SerializeField] private float fireInterval = 0.5f;
     [SerializeField] private TextAsset csv;
+    [SerializeField] private List<PlayerStatus> playerStatusList;
     private float fireTimer = 0;
     private int attackPower = 3;
+    private int level = 1;
     
     void Awake()
     {
@@ -18,14 +20,8 @@ public class PlayerShoot : MonoBehaviour
             Debug.LogError("CSV file is not assigned in the inspector.");
             return;
         }
-        List<PlayerStatus> playerStatusList = PlayerStatusLoader.Load(csv);
-        int playerLevel = PlayerData.Level;
-        if(playerLevel < 1 || playerLevel > playerStatusList.Count)
-        {
-            Debug.LogError("Invalid player level: " + playerLevel);
-            return;
-        }
-        attackPower = playerStatusList[playerLevel - 1].attack;
+        playerStatusList = PlayerStatusLoader.Load(csv);
+        UpdateAttackPower();
     }
 
     // Update is called once per frame
@@ -41,6 +37,7 @@ public class PlayerShoot : MonoBehaviour
 
     private void Shoot()
     {
+        UpdateAttackPower();
         Vector2 mousePos = Mouse.current.position.ReadValue();
         Ray ray = Camera.main.ScreenPointToRay(mousePos);
         Plane plane = new Plane(Vector3.up, firePoint.position);
@@ -58,5 +55,16 @@ public class PlayerShoot : MonoBehaviour
             bulletMove.MoveDirection(newdirection);
             bulletMove.SendDamage(attackPower);
         }
+    }
+
+    private void UpdateAttackPower()
+    {
+        level = PlayerData.Level;
+        if (playerStatusList == null || level < 1 || level > playerStatusList.Count)
+        {
+            Debug.LogError("Invalid player level: " + level);
+            return;
+        }        
+        attackPower = playerStatusList[level - 1].attack;
     }
 }
