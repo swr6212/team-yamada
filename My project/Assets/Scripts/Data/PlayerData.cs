@@ -74,4 +74,28 @@ public static class PlayerData
     {
         expList = list;
     }
+
+    public static void LoadData(int money,int level,int exp)
+    {
+        if(money < 0 || money > maxMoney)
+        {
+            return;
+        }
+        if(expList == null)
+        {
+            return;
+        }
+        if(level < 1 || level > expList.Count)
+        {
+            return;
+        }
+        if(exp < 0)
+        {
+            return;
+        }
+
+        PlayerData.nowMoney = money;
+        PlayerData.level = level;
+        PlayerData.exp = exp;
+    }
 }
