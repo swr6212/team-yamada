@@ -30,4 +30,21 @@ public static class LoadSaveGameData
         PlayerData.LoadData(leadData.money, leadData.level, leadData.exp);
         WeaponsManager.AllSettingsWeapon(leadData.id);
     }
+
+    public static void DeleteGame()
+    { 
+        if(!File.Exists(path))
+        {
+            return;
+        }
+        else
+        {
+            File.Delete(path);
+        }
+    }
+
+    public static bool SaveAvailability()
+    {
+        return File.Exists(path);
+    }
 }
