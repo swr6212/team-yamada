@@ -107,7 +107,7 @@ public class Enemy : MonoBehaviour
             GameManager.AddScore(10);
             PlayerData.AddMoney(dropMoney);
             PlayerData.AddExp(dropExp);
-            if(Random.value < dropRate)
+            if(dropWeaponId > 0 && Random.value < dropRate)
             {
                 WeaponsManager.AddWeapon(dropWeaponId);
             }
