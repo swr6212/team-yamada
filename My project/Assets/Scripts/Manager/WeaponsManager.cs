@@ -3,38 +3,41 @@ using System.Collections.Generic;
 
 public static class WeaponsManager
 {
-    static List<int> weaponList = new List<int>();
+    static List<WandData> weaponList = new List<WandData>();
     static public void AddWeapon(int weaponId)
     {
-        if (!weaponList.Contains(weaponId))
+      if(!weaponList.Exists(w  => w.whichWand == weaponId))
         {
-            weaponList.Add(weaponId);
+            WandData wand = new WandData();
+            wand.whichWand = weaponId;
+            weaponList.Add(wand);
         }
+            
     }
 
-    static public List<int> TakeAll()
+    static public List<WandData> TakeAll()
     {
-        List<int> allWeapons = new List<int>(weaponList);
+        List<WandData> allWeapons = new List<WandData>(weaponList);
         weaponList.Clear();
         return allWeapons;
     }
 
-    public static void AllSettingsWeapon(List<int> list)
+    public static void AllSettingsWeapon(List<WandData> list)
     {
         if(list == null)
         {
             return;
         }
         weaponList.Clear();
-        foreach(int weaponId in list)
+        foreach(WandData wand in list)
         {
-            AddWeapon(weaponId);
+            weaponList.Add(wand);
         }
     }
 
-    public static List<int> AllGetWeapon()
+    public static List<WandData> AllGetWeapon()
     {
-        List<int> saveWeapons = new List<int>(weaponList);
+        List<WandData> saveWeapons = new List<WandData>(weaponList);
         return saveWeapons;
     }
 }

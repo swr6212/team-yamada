@@ -6,6 +6,7 @@ public  class SaveData
 {
     public int money;
     public int level = 1;
-    public List<int> id = new List<int>();
     public int exp;
+    public List<TextDataBox> words = new List<TextDataBox>();
+    public List<WandData> wands = new List<WandData>();
 }

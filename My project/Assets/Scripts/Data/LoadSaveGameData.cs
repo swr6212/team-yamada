@@ -1,5 +1,7 @@
 using UnityEngine;
 using System.IO;
+using System.Collections.Generic;
+
 
 public static class LoadSaveGameData
 {
@@ -10,7 +12,7 @@ public static class LoadSaveGameData
         saveData.money = PlayerData.Money;
         saveData.level = PlayerData.Level;
         saveData.exp = PlayerData.Exp;
-        saveData.id = WeaponsManager.AllGetWeapon();
+        saveData.wands = WeaponsManager.AllGetWeapon();
         string save = JsonUtility.ToJson(saveData);
         File.WriteAllText(path, save);
     }
@@ -28,7 +30,7 @@ public static class LoadSaveGameData
             return;
         }
         PlayerData.LoadData(leadData.money, leadData.level, leadData.exp);
-        WeaponsManager.AllSettingsWeapon(leadData.id);
+        WeaponsManager.AllSettingsWeapon(leadData.wands);
     }
 
     public static void DeleteGame()
