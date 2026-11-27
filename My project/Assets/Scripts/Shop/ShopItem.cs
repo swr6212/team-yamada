@@ -2,21 +2,14 @@ using UnityEngine;
 
 public class ShopItem : MonoBehaviour
 {
-    [Header("アイテムの識別ID")]
-    public string itemId;
+    [Header("ボタンごとにInspectorで設定")]
+    public int itemId = 1; //CSVのIDと合わせる（1：火、２：風、３：氷）
+    public string itemName = "火"; //確認画面に出す名前
 
-    [Header("アイテムの効果の種類")]
-    public ItemEffectType effectType;
-
-    [Header("効果の大きさ(例: 攻撃力＋5なら5)")]
-    public int effectValue;
-
-    //アイテムの効果の種類をわかりやすく定義
-    public enum ItemEffectType
-    {
-        AttackUp,      //攻撃力アップ
-        DefenseUp,     //防御力アップ
-        MaxHPUp,       //最大HPアップ
-
-    }
+    [Header("CSVから自動で読み込まれる数値")]
+    public int attackPower;              // 攻撃力
+    public int burnDamage;               // 燃焼ダメージ
+    public int bonusDamage;              // 追加ダメージ
+    public int speedDownPercent;         // 移動速度低下（%）
+    public float duration;               // 効果時間（秒）
 }
