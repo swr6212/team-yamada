@@ -13,6 +13,7 @@ public static class LoadSaveGameData
         saveData.level = PlayerData.Level;
         saveData.exp = PlayerData.Exp;
         saveData.wands = WeaponsManager.AllGetWeapon();
+        saveData.words = WordsManager.AllGetWords();
         string save = JsonUtility.ToJson(saveData);
         File.WriteAllText(path, save);
     }
@@ -31,6 +32,7 @@ public static class LoadSaveGameData
         }
         PlayerData.LoadData(leadData.money, leadData.level, leadData.exp);
         WeaponsManager.AllSettingsWeapon(leadData.wands);
+        WordsManager.LoadWords(leadData.words);
     }
 
     public static void DeleteGame()
