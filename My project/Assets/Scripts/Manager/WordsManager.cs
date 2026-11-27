@@ -47,4 +47,23 @@ public static class WordsManager
             AddWords(t.whichWords,t.wordsCount);
         }
     }
+
+    public static bool UseWords(int wordsID)
+    {
+        if(wordsID < 1)
+        {
+            return false;
+        }
+        TextDataBox dataBox = textDataList.Find(t =>t.whichWords == wordsID);
+        if (dataBox == null || dataBox.wordsCount < 1)
+        {
+            return false;
+        }
+        dataBox.wordsCount--;
+        if(dataBox.wordsCount <= 0)
+        {
+            textDataList.Remove(dataBox);
+        }
+        return true;
+    }
 }
