@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement; //シーン遷移に必要
 using System.Collections;
 using System.Collections.Generic;
 
-public class Taitol : MonoBehaviour
+public class Title : MonoBehaviour
 {
     [SerializeField] private Animator MoveObject; //アニメーションを付けたオブジェクトをアタック
     public GameObject Fedeout; //フェードアウト用のパネル
