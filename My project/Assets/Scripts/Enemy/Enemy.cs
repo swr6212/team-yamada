@@ -24,6 +24,7 @@ public class Enemy : MonoBehaviour
     [SerializeField]private int dropWeaponId = 0; //ドロップする武器のID
     [SerializeField]private int dropMoney = 0;//ドロップする金額
     [SerializeField] private int dropExp = 1;
+    [SerializeField] private int enemyId;
     private int nowhp;
     private bool hasTriggered = false;//発動したか
     private float damageZ;
@@ -146,4 +147,17 @@ public class Enemy : MonoBehaviour
         }
     }
 
+    public void ApplyStatus(int hp,int attack,int dropExp,int dropCoin)
+    {
+        this.hp = hp;
+        nowhp = hp;
+        damage = attack;
+        this.dropExp = dropExp;
+        dropMoney = dropCoin;
+    }
+
+    public int EnemyId
+    {
+        get { return enemyId; }
+    }
 }

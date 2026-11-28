@@ -971,6 +971,7 @@ MonoBehaviour:
   firePoint: {fileID: 387308936}
   fireInterval: 1
   csv: {fileID: 4900000, guid: 55fb17386c0cbc449a7be2214df3eb1a, type: 3}
+  playerStatusList: []
 --- !u!114 &345210568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1220,6 +1221,7 @@ MonoBehaviour:
   waveText: {fileID: 888957119}
   damageZ: -11.5
   playerTransform: {fileID: 345210571}
+  csv: {fileID: 4900000, guid: c9edb7c68c90c8f44bed6d16adf48030, type: 3}
 --- !u!4 &374898041
 Transform:
   m_ObjectHideFlags: 0

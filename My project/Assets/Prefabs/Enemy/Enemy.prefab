@@ -62,6 +62,7 @@ MonoBehaviour:
   dropWeaponId: 0
   dropMoney: 0
   dropExp: 1
+  enemyId: 1
 --- !u!114 &2315108955168949903
 MonoBehaviour:
   m_ObjectHideFlags: 0

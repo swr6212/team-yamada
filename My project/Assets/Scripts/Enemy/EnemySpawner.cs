@@ -10,6 +10,8 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private TMP_Text waveText;
     [SerializeField] private float damageZ;
     [SerializeField] private Transform playerTransform;
+    [SerializeField] private TextAsset csv;
+    List<EnemyStatus> enemyList;
     private int currentWave = 0;
     private float waveTimer;
     private float spawnTimer;
@@ -17,6 +19,7 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         ShowWaveText(); 
+        enemyList = EnemyStatusLoader.Load(csv);
     }
 
     // Update is called once per frame
@@ -59,6 +62,13 @@ public class EnemySpawner : MonoBehaviour
             GameObject newEnemy = Instantiate(enemyData.enemyPrefab, enemyPos, Quaternion.identity);
             Enemy enemy = newEnemy.GetComponent<Enemy>();
             enemy.Setup(enemyData.moveType, playerTransform, damageZ);
+            EnemyStatus enemyStatus = enemyList.Find(e  => e.id == enemy.EnemyId
+            && e.wave == currentWave + 1);
+            if (enemyStatus != null)
+            {
+                enemy.ApplyStatus(enemyStatus.hp,enemyStatus.attack,enemyStatus.dropExp,enemyStatus.dropCoin);
+            }
+
             forWork.RemoveAt(enemyNum);
         }
 
