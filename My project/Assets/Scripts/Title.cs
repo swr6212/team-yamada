@@ -34,11 +34,37 @@ public class Title : MonoBehaviour
     }
 
 
-///////////////////////////////////////////////////////////////
+    ///////////////////////////////////////////////////////////////
 
+
+    [SerializeField] private GameObject SaveDataDeletePanel;
+
+    //SaveDataDeleteBottonを押したときに呼び出すSaveDataDeletePanel
+    public void OpenSaveDataDeletePanel()
+    {
+        SaveDataDeletePanel.SetActive(true); //パネルを表示する
+    }
+
+    //NoBottonを押したときに呼び出す
+    public void CloseSaveDataDeletePanel()
+    {
+        SaveDataDeletePanel.SetActive(false);
+    }
+
+    //YesBottonを押したときに呼び出す
+    public void OnClickSaveDataDelete()
+    {
+        LoadSaveGameData.DeleteGame();
+        Debug.Log("セーブデータを削除しました！"); // 確認用ログ（必要に応じて）
+        CloseSaveDataDeletePanel(); // 削除後にパネルを閉じる
+    }
+
+    
+    ///////////////////////////////////////////////////////////////////
+  
 
     [SerializeField] private GameObject confirmPanel;
-
+    
     //おわるボタンを押したときに呼び出すSettingPanel
     public void OpenconfirmPanel()
     {
