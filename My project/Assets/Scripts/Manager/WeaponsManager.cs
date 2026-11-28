@@ -4,9 +4,10 @@ using System.Collections.Generic;
 public static class WeaponsManager
 {
     static List<WandData> weaponList = new List<WandData>();
+
     static public void AddWeapon(int weaponId)
     {
-      if(!weaponList.Exists(w  => w.whichWand == weaponId))
+        if (!weaponList.Exists(w  => w.whichWand == weaponId))
         {
             WandData wand = new WandData();
             wand.whichWand = weaponId;
